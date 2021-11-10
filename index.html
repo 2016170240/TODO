@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do App With local storage</title>
+
+    <link rel="stylesheet" href="./Css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./Css/style.css" />
+  </head>
+  <body>
+    <div class="to-do">
+    <div class="container">
+      <div class="title">
+      <h2 class="todoTitle">To Do</h2>
+      <span class="ani"></span>
+    </div>
+      <form>
+        <div class="form-floating mb-3 finput">
+          <input type="text" class="form-control input" id="floatingInput" placeholder="name@example.com" minlength="5" maxlength="10">
+          <label for="floatingInput">Task Title :</label>
+          <span class="border"></span>
+          <span class="counter"></span>
+        </div>
+
+
+
+        <div class="form-floating mb-3">
+          <textarea type="text" class="form-control content" id="floatingInput" placeholder="name@example.com"></textarea>
+          <label for="floatingInput">Task Content :</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="datetime-local" class="form-control date" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput">Expired Date:</label>
+        </div>
+
+       
+
+        <button type="submit" class="btn btn-success add">Add Task</button>
+        <button type="button" class="btn btn-danger deleteAll">Delete All Tasks</button>
+      </form>
+    
+      <div class="tasks">
+
+      </div>
+      
+    </div>
+  </div>
+    <script src="./Js/custom.js"></script>
+    <script src="./Js/bootstrap.bundle.js"></script>
+    <script src="./Js/bootstrap.min.js"></script>
+  </body>
+</html>
